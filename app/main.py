@@ -1,7 +1,8 @@
 from fastapi import FastAPI
 from contextlib import asynccontextmanager
-from database import SessionLocal, load_stored_procedures
-from router import video_router
+from app.database import SessionLocal, load_stored_procedures
+from app.router import video_router
+
 
 # 수명 주기(Lifespan) 관리
 @asynccontextmanager

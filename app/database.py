@@ -30,7 +30,7 @@ Base = declarative_base()
 # ---------------------------------------------------------
 # 6. 프로시저 자동 로드 함수 (이전 답변 내용 포함)
 # ---------------------------------------------------------
-PROCEDURE_DIR = "./db/procedures"  # SQL 파일들이 위치한 경로
+PROCEDURE_DIR = "app/db/procedures"  # SQL 파일들이 위치한 경로
 
 def load_stored_procedures(db: Session):
     """

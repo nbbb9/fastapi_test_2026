@@ -1,5 +1,5 @@
 from fastapi import APIRouter, Header
-from service import video_service
+from app.service import video_service
 
 router = APIRouter()
 
