@@ -9,7 +9,7 @@ load_dotenv()
 TARGET_SCHEMA = os.getenv("DB_SCHEMA", "test")
 
 # 2. 데이터베이스 연결 정보
-# 형식: postgresql://사용자:비밀번호@호스트:포트/DB명
+# SQLALCHEMY_DATABASE_URL = "postgresql://<사용자>:<비밀번호>@<호스트>:<포트>/<DB명>"
 SQLALCHEMY_DATABASE_URL = "postgresql://myuser:mypassword@127.0.0.1:5432/mydb"
 
 # 3. 엔진 생성
@@ -20,7 +20,7 @@ engine = create_engine(
     }
 )
 
-# 4. 세션 로컬 생성 (이 부분이 누락되어 에러가 난 것입니다)
+# 4. 세션 로컬 생성
 # 실제 DB 세션을 생성해주는 공장(Factory) 역할입니다.
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
 
