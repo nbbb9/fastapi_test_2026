@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SqlDialectMappings">
+    <file url="file://$PROJECT_DIR$/db/procedures/new_fuction1.sql" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/db/procedures/new_fuction2.sql" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/db/sql/R__new_func2.sql" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/db/sql/R__new_function1.sql" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/db/sql/R__test_proc.sql" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/db/sql/R__update_logic.sql" dialect="GenericSQL" />
+  </component>
+</project>
