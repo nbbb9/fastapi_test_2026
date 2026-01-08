@@ -28,7 +28,7 @@ SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
 Base = declarative_base()
 
 # ---------------------------------------------------------
-# 6. 프로시저 자동 로드 함수 (이전 답변 내용 포함)
+# 6. 프로시저 자동 로드 함수
 # ---------------------------------------------------------
 PROCEDURE_DIR = "app/db/procedures"  # SQL 파일들이 위치한 경로
 
@@ -56,7 +56,7 @@ def load_stored_procedures(db: Session):
 
                 if sql_content.strip():
                     db.execute(text(sql_content))
-                    # [수정 포인트 1] 성공하면 즉시 반영 (다른 파일에 영향 안 줌)
+                    # 성공하면 즉시 반영 (다른 파일에 영향 안 줌)
                     db.commit()
                     print(f"[성공] {filename} 적용 완료")
 
